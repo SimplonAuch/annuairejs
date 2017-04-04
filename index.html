@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="tablesorter/jquery.tablesorter.min.js"></script>
+
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+	<main class="container">
+
+
+		<h1>Annuaire</h1>
+
+
+
+		<div class="row">
+
+			<ul class="nav nav-tabs">
+				<li role="presentation" class="active"><a href="#voir" data-toggle="tab">Voir</a></li>
+				<li role="presentation"><a href="#ajouter" data-toggle="tab">Ajouter</a></li>
+				<li role="presentation"><a href="#aide" data-toggle="tab">Aide</a></li>
+			</ul>			
+
+			<div class="tab-content clearfix">
+
+				<div class="tab-pane active" id="voir">
+					<table class="table text-center tablesorter">
+						<thead>
+								<tr>
+									<th class="text-center">ID</th>
+									<th class="text-center">Prénom</th>
+									<th class="text-center">Nom</th>
+									<th class="text-center">Age</th>
+									<th class="text-center">Actions</th>
+								</tr>
+								<tr style="background-color:#eee">
+									<td><input type="text" name=""></td>
+									<td><input type="text" name=""></td>
+									<td><input type="text" name=""></td>
+									<td><input type="text" name=""></td>
+									<td><button class="reset">RST</button></td>
+								</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+
+
+				<div class="tab-pane" id="ajouter">
+					<div id="ajout" class="col-md-4">
+						<div class="form-group">		
+							<label>Prénom</label>
+							<input type="text" name="prenom" class="form-control" />
+						</div>
+
+						<div class="formGroup">		
+							<label>Nom</label>
+							<input type="text" name="nom" class="form-control" />
+						</div>
+
+						<div class="formGroup">		
+							<label>Age</label>
+							<input type="text" name="age" class="form-control" />
+						</div>
+
+						<div class="formGroup">		
+							<button id="add" class="btn btn-default">Enregistrer</button>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="tab-pane" id="aide">
+					<h2>Challenges</h2>
+
+					<p>Ajoutez un bouton 'supprimer' sur chaque ligne</p>
+					<ul>
+						<li>jQuery data</li>
+						<li>jQuery delegate</li>
+					</ul>
+
+					<p>Faites en sorte que l'annuaire soit enregistré d'une page à l'autre</p>
+					<ul>
+						<li>localStorage</li>
+						<li>JSON.stringify</li>
+						<li>JSON.parse</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+	</main>
+
+
+</body>
+</html>
